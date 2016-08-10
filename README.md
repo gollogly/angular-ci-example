@@ -2,6 +2,7 @@
 
 
 [![Build Status](https://travis-ci.org/gollogly/angular-ci-example.svg?branch=develop)](https://travis-ci.org/gollogly/angular-ci-example)
+[![Coverage Status](https://coveralls.io/repos/github/gollogly/angular-ci-example/badge.svg?branch=master)](https://coveralls.io/github/gollogly/angular-ci-example?branch=master)
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
