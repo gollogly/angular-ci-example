@@ -1,7 +1,12 @@
-FROM node
+FROM node:lastet
 MAINTAINER Martin Gollogly
 
-RUN -p 8080:9090 -v $(pwd):/app -w "/app" node
-RUN npm install -g grunt 
+ENV PORT = 9090
 
-CMD ["grunt serve --force"]
+RUN npm install -g grunt 
+EXPOSE $PORT
+
+ENTRYPOINT ["grunt", "serve"]
+
+#(From command line and interactive shell
+# -- docker run -i -t -p 8080:9090 YOUR_DOCKER_TAG/ bin/bash)
